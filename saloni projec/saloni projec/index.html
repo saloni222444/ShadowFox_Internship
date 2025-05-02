@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai Indians Fansite 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <meta name="description" content="Official Mumbai Indians fan hub with latest news, player stats, match schedules, and fan engagement features for IPL 2025">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="https://1000logos.net/wp-content/uploads/2022/08/Mumbai-Indians-Logo.png" alt="MI Logo">
+            <div class="logo-text">
+                <h1>MI PALTAAN</h1>
+                <p>EST. 2008 | 6-TIME CHAMPIONS</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#squad">2025 Squad</a></li>
+                <li><a href="#schedule">Fixtures</a></li>
+                <li><a href="#stats">MI Legends</a></li>
+                <!-- <li><a href="#news">News</a></li>
+                <li><a href="#fan-zone">Paltan Zone</a></li>
+                <li><a href="#forum">Forum</a></li> -->
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>DROUGHT OR STORM<br>WE PLAY TO PERFORM!</h2>
+            <p>Official fan hub for the most successful IPL franchise</p>
+            <div class="countdown">
+                <p>IPL 2025 BEGINS IN:</p>
+                <div id="countdown-timer">
+                    <span id="days">00</span>d 
+                    <span id="hours">00</span>h 
+                    <span id="minutes">00</span>m
+                    <span id="seconds">00</span>s
+                </div>
+            </div>
+            <div class="live-indicator" id="live-match-indicator">
+                <span class="live-dot"></span>
+                <span>LIVE: MI vs KKR - MI 145/3 (15.2)</span>
+                <a href="#live" class="watch-btn">Watch Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Ticker -->
+    <div class="news-ticker">
+        <div class="ticker-header">Latest News:</div>
+        <div class="ticker-content">
+            <span>• Hardik Pandya named captain for IPL 2025 • MI to play pre-season matches in Dubai • Rohit Sharma appointed batting mentor •</span>
+        </div>
+    </div>
+
+    <!-- Squad Section -->
+    <section id="squad" class="squad-section">
+        <h2 class="section-title">2025 SQUAD</h2>
+        <div class="player-categories">
+            <button class="category-btn active" data-category="all">All Players</button>
+            <button class="category-btn" data-category="batsmen">Batsmen</button>
+            <button class="category-btn" data-category="bowlers">Bowlers</button>
+            <button class="category-btn" data-category="allrounders">All-Rounders</button>
+           
+        </div>
+        <div class="search-box">
+            <input type="text" id="player-search" placeholder="Search players...">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="players-grid">
+            <!-- Player cards will be inserted by JavaScript -->
+        </div>
+        <div class="team-stats">
+            <div class="stat-card">
+                <h3>Squad Strength</h3>
+                <p>25</p>
+            </div>
+            <div class="stat-card">
+                <h3>International</h3>
+                <p>8</p>
+            </div>
+            <div class="stat-card">
+                <h3>U-23 Players</h3>
+                <p>5</p>
+            </div>
+        </div>
+    </section>
+
+
+       <!-- Points Table Section -->
+<section id="points-table" class="points-table-section">
+    <div class="container">
+        <h2 class="section-title">IPL 2025 POINTS TABLE</h2>
+        
+        <div class="filter-controls">
+            <div class="filter-group">
+                <div class="custom-select">
+                    <select id="category-select">
+                        <option value="men">MEN</option>
+                        <option value="women">WOMEN</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <div class="custom-select">
+                    <select id="season-select">
+                        <option value="2025" selected>SEASON 2025</option>
+                        <option value="2024">SEASON 2024</option>
+                        <option value="2023">SEASON 2023</option>
+                        <!-- Add more seasons as needed -->
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="table-responsive">
+            <table class="points-table">
+                <thead>
+                    <tr>
+                        <th class="pos-col">POS</th>
+                        <th class="team-col">TEAM</th>
+                        <th>P</th>
+                        <th>W</th>
+                        <th>L</th>
+                        <th>NR</th>
+                        <th>NRR</th>
+                        <th class="pts-col">PTS</th>
+                        <th class="form-col">FORM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Team 1 -->
+                    <tr class="mi-team">
+                        <td class="pos">1</td>
+                        <td class="team">
+                            <img src="https://ipl-stats-sports-mechanic.s3.ap-south-1.amazonaws.com/ipl/teamlogos/MI.png" alt="Mumbai Indians">
+                            <span>Mumbai Indians</span>
+                        </td>
+                        <td>10</td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td class="positive">+1.254</td>
+                        <td class="pts">16</td>
+                        <td class="form">
+                            <span class="win">W</span>
+                            <span class="win">W</span>
+                            <span class="win">W</span>
+                            <span class="loss">L</span>
+                            <span class="win">W</span>
+                        </td>
+                    </tr>
+                    
+                    <!-- Team 2 -->
+                    <tr>
+                        <td class="pos">2</td>
+                        <td class="team">
+                            <img src="https://ipl-stats-sports-mechanic.s3.ap-south-1.amazonaws.com/ipl/teamlogos/CSK.png" alt="Chennai Super Kings">
+                            <span>Chennai Super Kings</span>
+                        </td>
+                        <td>10</td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td class="positive">+0.891</td>
+                        <td class="pts">14</td>
+                        <td class="form">
+                            <span class="win">W</span>
+                            <span class="loss">L</span>
+                            <span class="win">W</span>
+                            <span class="win">W</span>
+                            <span class="loss">L</span>
+                        </td>
+                    </tr>
+                    
+                    <!-- Team 3 -->
+                    <tr>
+                        <td class="pos">3</td>
+                        <td class="team">
+                            <img src="https://ipl-stats-sports-mechanic.s3.ap-south-1.amazonaws.com/ipl/teamlogos/RCB.png" alt="Royal Challengers">
+                            <span>Royal Challengers</span>
+                        </td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td class="positive">+0.521</td>
+                        <td class="pts">12</td>
+                        <td class="form">
+                            <span class="win">W</span>
+                            <span class="win">W</span>
+                            <span class="win">W</span>
+                            <span class="loss">L</span>
+                            <span class="win">W</span>
+                        </td>
+                    </tr>
+                    
+                    <!-- Team 4 -->
+                    <tr>
+                        <td class="pos">4</td>
+                        <td class="team">
+                            <img src="https://ipl-stats-sports-mechanic.s3.ap-south-1.amazonaws.com/ipl/teamlogos/KKR.png" alt="Kolkata Knight Riders">
+                            <span>Kolkata Knight Riders</span>
+                        </td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td class="positive">+0.362</td>
+                        <td class="pts">12</td>
+                        <td class="form">
+                            <span class="loss">L</span>
+                            <span class="loss">L</span>
+                            <span class="win">W</span>
+                            <span class="loss">L</span>
+                            <span class="win">W</span>
+                        </td>
+                    </tr>
+                    
+                    <!-- Team 5 -->
+                    <tr>
+                        <td class="pos">5</td>
+                        <td class="team">
+                            <img src="https://ipl-stats-sports-mechanic.s3.ap-south-1.amazonaws.com/ipl/teamlogos/GT.png" alt="Gujarat Titans">
+                            <span>Gujarat Titans</span>
+                        </td>
+                        <td>9</td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td class="positive">+0.177</td>
+                        <td class="pts">11</td>
+                        <td class="form">
+                            <span class="no-result">N</span>
+                            <span class="loss">L</span>
+                            <span class="win">W</span>
+                            <span class="win">W</span>
+                            <span class="loss">L</span>
+                        </td>
+                    </tr>
+                    
+                    <!-- Team 6 -->
+                    <tr>
+                        <td class="pos">6</td>
+                        <td class="team">
+                            <img src="https://ipl-stats-sports-mechanic.s3.ap-south-1.amazonaws.com/ipl/teamlogos/RR.png" alt="Rajasthan Royals">
+                            <span>Rajasthan Royals</span>
+                        </td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td class="negative">-0.325</td>
+                        <td class="pts">10</td>
+                        <td class="form">
+                            <span class="loss">L</span>
+                            <span class="loss">L</span>
+                            <span class="win">W</span>
+                            <span class="loss">L</span>
+                            <span class="win">W</span>
+                        </td>
+                    </tr>
+                    
+                    <!-- Team 7 -->
+                    <tr>
+                        <td class="pos">7</td>
+                        <td class="team">
+                            <img src="https://ipl-stats-sports-mechanic.s3.ap-south-1.amazonaws.com/ipl/teamlogos/PBKS.png" alt="Punjab Kings">
+                            <span>Punjab Kings</span>
+                        </td>
+                        <td>10</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td class="positive">+0.271</td>
+                        <td class="pts">9</td>
+                        <td class="form">
+                            <span class="win">W</span>
+                            <span class="no-result">N</span>
+                            <span class="loss">L</span>
+                            <span class="loss">L</span>
+                            <span class="win">W</span>
+                        </td>
+                    </tr>
+                    
+                    <!-- Team 8 -->
+                    <tr>
+                        <td class="pos">8</td>
+                        <td class="team">
+                            <img src="https://ipl-stats-sports-mechanic.s3.ap-south-1.amazonaws.com/ipl/teamlogos/SRH.png" alt="Sunrisers Hyderabad">
+                            <span>Sunrisers Hyderabad</span>
+                        </td>
+                        <td>10</td>
+                        <td>3</td>
+                        <td>7</td>
+                        <td>0</td>
+                        <td class="negative">-0.349</td>
+                        <td class="pts">6</td>
+                        <td class="form">
+                            <span class="win">W</span>
+                            <span class="loss">L</span>
+                            <span class="loss">L</span>
+                            <span class="loss">L</span>
+                            <span class="loss">L</span>
+                        </td>
+                    </tr>
+                    
+                    <!-- Team 9 -->
+                    <tr>
+                        <td class="pos">9</td>
+                        <td class="team">
+                            <img src="https://ipl-stats-sports-mechanic.s3.ap-south-1.amazonaws.com/ipl/teamlogos/LSG.png" alt="Lucknow Super Giants">
+                            <span>Lucknow Super Giants</span>
+                        </td>
+                        <td>9</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td class="negative">-1.103</td>
+                        <td class="pts">6</td>
+                        <td class="form">
+                            <span class="win">W</span>
+                            <span class="loss">L</span>
+                            <span class="loss">L</span>
+                            <span class="win">W</span>
+                            <span class="loss">L</span>
+                        </td>
+                    </tr>
+                    
+                    <!-- Team 10 -->
+                    <tr>
+                        <td class="pos">10</td>
+                        <td class="team">
+                            <img src="https://ipl-stats-sports-mechanic.s3.ap-south-1.amazonaws.com/ipl/teamlogos/DC.png" alt="Delhi Capitals">
+                            <span>Delhi Capitals</span>
+                        </td>
+                        <td>9</td>
+                        <td>2</td>
+                        <td>7</td>
+                        <td>0</td>
+                        <td class="negative">-1.302</td>
+                        <td class="pts">4</td>
+                        <td class="form">
+                            <span class="loss">L</span>
+                            <span class="loss">L</span>
+                            <span class="win">W</span>
+                            <span class="loss">L</span>
+                            <span class="loss">L</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<!-- Fixtures Section -->
+<section id="schedule" class="fixtures-section" id="FIXTURES">
+    <h2 class="section-title">IPL 2025 FIXTURES</h2>
+    <div class="fixtures-container">
+        <!-- Match 80 -->
+        <div class="fixture-card">
+            <div class="fixture-date">
+                <span class="day">1 MAY, 2025 | Thursday</span>
+            </div>
+            <div class="fixture-details">
+                <div class="match-number">Match 80</div>
+                <div class="match-status">Upcoming</div>
+                <div class="teams-container">
+                    <div class="team">
+                        <span class="team-name">RAJASTHAN ROYALS</span>
+                        <span class="team-city">Jaipur</span>
+                    </div>
+                    <div class="vs">vs</div>
+                    <div class="team">
+                        <span class="team-name">MUMBAI INDIANS</span>
+                        <span class="team-city">Mumbai</span>
+                    </div>
+                </div>
+                <div class="match-venue">
+                    Sawai Mansingh Stadium, Jaipur
+                </div>
+            </div>
+        </div>
+
+        <!-- Match 86 -->
+        <div class="fixture-card">
+            <div class="fixture-date">
+                <span class="day">6 MAY, 2025 | Tuesday</span>
+            </div>
+            <div class="fixture-details">
+                <div class="match-number">Match 86</div>
+                <div class="match-status">Upcoming</div>
+                <div class="teams-container">
+                    <div class="team">
+                        <span class="team-name">CHENNAI SUPER KINGS</span>
+                        <span class="team-city">Chennai</span>
+                    </div>
+                    <div class="vs">vs</div>
+                    <div class="team">
+                        <span class="team-name">MUMBAI INDIANS</span>
+                        <span class="team-city">Mumbai</span>
+                    </div>
+                </div>
+                <div class="match-venue">
+                    Wankhede Stadium, Mumbai
+                </div>
+            </div>
+        </div>
+
+        <!-- Match 61 -->
+        <div class="fixture-card">
+            <div class="fixture-date">
+                <span class="day">11 MAY, 2025 | Sunday</span>
+            </div>
+            <div class="fixture-details">
+                <div class="match-number">Match 61</div>
+                <div class="match-status">Upcoming</div>
+                <div class="teams-container">
+                    <div class="team">
+                        <span class="team-name">PUNJAB KINGS</span>
+                        <span class="team-city">Mohali</span>
+                    </div>
+                    <div class="vs">vs</div>
+                    <div class="team">
+                        <span class="team-name">MUMBAI INDIANS</span>
+                        <span class="team-city">Mumbai</span>
+                    </div>
+                </div>
+                <div class="match-venue">
+                    HPCA Stadium, Dharamshala
+                </div>
+            </div>
+        </div>
+
+        <!-- Match 66 -->
+        <div class="fixture-card">
+            <div class="fixture-date">
+                <span class="day">18 MAY, 2025 | Thursday</span>
+            </div>
+            <div class="fixture-details">
+                <div class="match-number">Match 66</div>
+                <div class="match-status">Upcoming</div>
+                <div class="teams-container">
+                    <div class="team">
+                        <span class="team-name">CHENNAI SUPER KINGS</span>
+                        <span class="team-city">Chennai</span>
+                    </div>
+                    <div class="vs">vs</div>
+                    <div class="team">
+                        <span class="team-name">DELHI CAPITALS</span>
+                        <span class="team-city">Delhi</span>
+                    </div>
+                </div>
+                <div class="match-venue">
+                    Wankhede Stadium, Mumbai
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Stats Section -->
+    <section id="stats" class="stats-section">
+        <h2 class="section-title">MI LEGENDS</h2>
+        <div class="legends-slider">
+            <!-- Legend cards will be inserted by JavaScript -->
+        </div>
+        <div class="records-container">
+            <div class="record-card">
+                <h3>Highest Score</h3>
+                <p>Rohit Sharma</p>
+                <p class="record-value">109* (60) vs KKR, 2012</p>
+            </div>
+            <div class="record-card">
+                <h3>Best Bowling</h3>
+                <p>Alzarri Joseph</p>
+                <p class="record-value">6/12 vs SRH, 2019</p>
+            </div>
+            <div class="record-card">
+                <h3>Most Runs</h3>
+                <p>Rohit Sharma</p>
+                <p class="record-value">5,000+ runs</p>
+            </div>
+            <div class="record-card">
+                <h3>Most Wickets</h3>
+                <p>Jasprit Bumrah</p>
+                <p class="record-value">150+ wickets</p>
+            </div>
+        </div>
+    </section>
+<!-- 
+    News Section -->
+    <!-- <section id="news" class="news-section">
+        <h2 class="section-title">MI NEWS & UPDATES</h2>
+        <div class="news-grid">
+            <div class="news-card featured">
+                <img src="https://www.mumbaiindians.com/static-assets/waf-images/01/1b/16/9-16/1200-675.png" alt="MI Training">
+                <div class="news-content">
+                    <span class="news-date">April 15, 2025</span>
+                    <h3>MI Begins Pre-Season Camp in Dubai</h3>
+                    <p>The Mumbai Indians squad has assembled in Dubai for a two-week intensive training camp ahead of IPL 2025...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="https://c.ndtvimg.com/2025-04/12806hbo_sc_625x300_04_April_25.jpeg" alt="Hardik Pandya">
+                <div class="news-content">
+                    <span class="news-date">April 10, 2025</span>
+                    <h3>Hardik Pandya Named Captain for IPL 2025</h3>
+                    <p>Mumbai Indians management has confirmed Hardik Pandya will lead the team in the upcoming season...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/6.png" alt="Rohit Sharma">
+                <div class="news-content">
+                    <span class="news-date">April 5, 2025</span>
+                    <h3>Rohit Sharma Takes Up Batting Mentor Role</h3>
+                    <p>The legendary MI captain will now serve as batting mentor while continuing to play for the franchise...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="newsletter">
+            <h3>Subscribe to MI Newsletter</h3>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section> -->
+
+    <!-- <section>
+        <div class="fan-gallery">
+            <h3>Paltan Moments</h3>
+            <div class="gallery-container">
+                <button class="gallery-nav prev" aria-label="Previous photo">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="gallery-slider">
+                    <div class="gallery-slide">
+                        <img src="https://mumbaiindians.com/uploads/images/_1200x630_crop_center-center_82_none/2023-05-16-17-31-30-1.jpg" alt="MI Team Celebration">
+                        <div class="slide-caption">MI Team Trophy Celebration</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://mumbaiindians.com/uploads/images/_1200x630_crop_center-center_82_none/2023-05-16-17-31-30-2.jpg" alt="Wankhede Stadium">
+                        <div class="slide-caption">Electric Atmosphere at Wankhede</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://mumbaiindians.com/uploads/images/_1200x630_crop_center-center_82_none/2023-05-16-17-31-30-3.jpg" alt="Fan Cheering">
+                        <div class="slide-caption">Passionate MI Fan</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://mumbaiindians.com/uploads/images/_1200x630_crop_center-center_82_none/2023-05-16-17-31-30-4.jpg" alt="Team Huddle">
+                        <div class="slide-caption">Team Strategy Discussion</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://mumbaiindians.com/uploads/images/_1200x630_crop_center-center_82_none/2023-05-16-17-31-30-5.jpg" alt="Fan Meet">
+                        <div class="slide-caption">Fan Meet & Greet Event</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://mumbaiindians.com/uploads/images/_1200x630_crop_center-center_82_none/2023-05-16-17-31-30-6.jpg" alt="Match Action">
+                        <div class="slide-caption">Exciting Match Moment</div>
+                    </div>
+                </div>
+                <button class="gallery-nav next" aria-label="Next photo">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="gallery-dots"> -->
+                <!-- Dots will be added by JavaScript -->
+            <!-- </div>
+        </div>
+    </section> -->
+<!-- 
+    Forum Section
+    <section id="forum" class="forum-section">
+        <h2 class="section-title">PALTAN FORUM</h2>
+        <div class="forum-container">
+            <div class="discussion-list">
+                <h3>Latest Discussions</h3>
+                <div class="discussion">
+                    <div class="discussion-header">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                        <div>
+                            <h4>Team Combination for First Match</h4>
+                            <span>Posted by MI_Fanatic · 3 hours ago · 24 comments</span>
+                        </div>
+                    </div>
+                    <p>What should be our ideal playing XI for the opener against CSK? I think we should play both Nehal and Brevis...</p>
+                </div>
+                <div class="discussion">
+                    <div class="discussion-header">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+                        <div>
+                            <h4>Hardik as Captain - Your Thoughts?</h4>
+                            <span>Posted by BlueAndGold · 5 hours ago · 42 comments</span>
+                        </div>
+                    </div>
+                    <p>How do we feel about Hardik taking over the captaincy? I think it's a good move for the future...</p>
+                </div>
+                <div class="discussion">
+                    <div class="discussion-header">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="User">
+                        <div>
+                            <h4>Predictions for IPL 2025</h4>
+                            <span>Posted by MI_forever · 1 day ago · 18 comments</span>
+                        </div>
+                    </div>
+                    <p>Where do you see MI finishing this season? I'm confident we can make the playoffs with this squad...</p>
+                </div>
+            </div>
+            <div class="create-post">
+                <h3>Start a Discussion</h3>
+                <form id="forum-post">
+                    <input type="text" placeholder="Title" required>
+                    <textarea placeholder="What's on your mind?" required></textarea>
+                    <button type="submit" class="btn">Post Discussion</button>
+                </form>
+                <div class="forum-rules">
+                    <h4>Community Guidelines</h4>
+                    <ul>
+                        <li>Be respectful to all members</li>
+                        <li>No abusive or offensive language</li>
+                        <li>Keep discussions relevant to MI cricket</li>
+                        <li>No spamming or self-promotion</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="https://1000logos.net/wp-content/uploads/2022/08/Mumbai-Indians-Logo.png" alt="MI Logo" class="footer-logo-img">
+                <p class="footer-title">MI PALTAAN FAN HUB</p>
+                <div class="newsletter-signup">
+                    <h4>Get Team Updates</h4>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="subscribe-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <p class="newsletter-confirmation"></p>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4 class="footer-heading">Team</h4>
+                    <ul>
+                        <li><a href="#squad" class="footer-link">Squad</a></li>
+                        <li><a href="#stats" class="footer-link">Legends</a></li>
+                        <li><a href="#schedule" class="footer-link">Fixtures</a></li>
+                        <!-- <li><a href="#news" class="footer-link">News</a></li> -->
+                    </ul>
+                </div>
+            
+                <!-- <div class="link-group">
+                    <h4 class="footer-heading">About</h4>
+                    <ul>
+                        <li><a href="#" class="footer-link">Terms</a></li>
+                        <li><a href="#" class="footer-link">Privacy</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                    </ul>
+                </div>
+            </div> -->
+            
+            <div class="social-links">
+                <h4 class="footer-heading">Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="https://twitter.com/mipaltan" target="_blank" class="social-icon" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mumbaiindians?igsh=MWlvOG1xYnpsdjhiMg==" target="_blank" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com/mumbaiindians" target="_blank" class="social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@MumbaiIndians" target="_blank" class="social-icon" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                
+             
+        <div class="footer-bottom">
+            <p class="disclaimer">*This is a fan website. Not affiliated with Mumbai Indians or IPL. All images and media are property of their respective owners.</p>
+            <p class="copyright">© 2025 MI Paltan Fan Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

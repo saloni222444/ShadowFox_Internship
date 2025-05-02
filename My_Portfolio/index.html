@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALONI PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="fav.png" type="image/x-icon"/>
+</head>
+<body>
+
+    <img class="image-gradient" src="gradient.png" alt="gradient">
+    <div class="layer-blur"></div>
+
+<div class="container">
+    <header class="header">
+        <a href="index.html" class="logo">Saloni</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="#About Me">About Me</a>
+            <a href="#skill">Skill</a>
+            <a href="#services">Services</a>
+            <a href="#Education">Education</a>
+            <a href="mailto:salonimoga@gmail.com">Contact</a>
+        </nav>
+    </header>
+    
+    <main class="main-section">
+        <div class="content">
+            <div class="home-content">
+                <h1>This side <span>Saloni</span></h1>
+                <h3 class="typing-text">I'm a <span></span></h3>
+                <p>Like the desktop platform, to bring your features, you can easily modify.</p>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/salonimoga/" target="_blank" class="fa-brands fa-linkedin"></a>
+                    <a href="https://github.com/saloni222444" target="_blank" class="fa-brands fa-github"></a>
+                    <a href="https://www.instagram.com/saloniiiii___24/" target="_blank" class="fa-brands fa-instagram"></a>
+                </div>
+                <div class="home-button">
+                    <button class="button" onclick="window.location.href = 'mailto:salonimoga@gmail.com';">
+                        <p>Let's Collaborate</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <spline-viewer class="robot-3d" url="https://prod.spline.design/W44oG52Yk1BqVs-e/scene.splinecode"></spline-viewer>
+    </main>
+    
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+</div> 
+<style>
+    spline-viewer.robot-3d::part(watermark) 
+    {
+      display: none !important;
+    }
+</style>
+
+
+<section class="about-section" id="About Me">
+    <h2 class="heading">Ab<span class="accent-o">o</span>ut M<span class="accent-e">e</span></h2>
+    <div class="about-container">
+        <div class="about-photo">
+            <!-- Replace with your actual photo -->
+            <img src="pic.jpg" alt="Profile Photo">
+        </div>
+        <div class="about-content">
+           
+            <p>I’m a curious mind, a builder at heart, and someone who finds joy in turning small ideas into meaningful creations. I love blending creativity with logic—whether it’s through code, design, or simply the way I connect with people. I believe tech should feel personal, inclusive, and empowering.</p>
+            <p>Right now, I’m diving into language tech, working on a Part-of-Speech tagger for the Dogri language—because every voice deserves space in the digital world. I’m constantly exploring, learning, sketching, building, and growing—one thoughtful step at a time.</p>
+            <p class="connect-line"><b>Let's connect and create something awesome!</b></p>
+        </div>
+    </div>
+    <!-- <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+    }
+     </style> -->
+</section>
+
+
+<section class="skills" id="skill">
+    <h2 class="heading">Skills</h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row" id="skillsContainer">
+            <div class="bar">
+                <div class="info">
+                    <img src="java.png">
+                    <span>Java</span>
+                </div>
+                <div class="info">
+                    <img src="HTML.png">
+                    <span>HTML</span>
+                </div>
+                <div class="info">
+                    <img src="css.png">
+                    <span>CSS</span>
+                </div>
+                <div class="info">
+                    <img src="python.png">
+                    <span>Python</span>
+                </div>
+                <div class="info">
+                    <img src="Web.png">
+                    <span>Web Development</span>
+                </div>
+                <div class="info">
+                    <img src="DBMS.png">
+                    <span>DBMS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+        <div class="service-container">
+            <div class="single-service">
+                <div class="content">
+                    <span class="icon">
+                        <i class="fa-brands fa-chrome"></i>
+                    </span>
+                    <h3 class="title">Web Developer</h3>
+                    <p class="description">Working on HTML,CSS and JS. Trying Flask and many more to come.</p>
+                    <a href="https://drive.google.com/drive/folders/14sYO0fyHVQoPd2o8AN-5WCg54P4TMZu4" target="_blank" class="learn-more">Learn More</a>
+                </div>
+                <span class="circle-before"></span>
+            </div>
+
+            <div class="single-service">
+                <div class="content">
+                    <span class="icon">
+                        <i class="fa-solid fa-terminal"></i>
+                    </span>
+                    <h3 class="title">Coder</h3>
+                    <p class="description">Just Problem Solving</p>
+                    <a href="https://leetcode.com/u/salonimoga/" class="learn-more">Learn More</a>
+                </div>
+                <span class="circle-before"></span>
+            </div>
+
+            <div class="single-service">
+                <div class="content">
+                    <span class="icon">
+                        <i class="fa-brands fa-google-play"></i>
+                    </span>
+                    <h3 class="title">Software Developer</h3>
+                    <p class="description">Starting soon</p>
+                    <a href="https://roadmap.sh/" class="learn-more">Learn More</a>
+                </div>
+                <span class="circle-before"></span>
+            </div>
+            <!-- <div class="single-service">
+                <div class="content">
+                    <span class="icon">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </span>
+                    <h3 class="title">Gamer</h3>
+                    <p class="description">Play Valorant (ID : CAPMERxSAM) &nbsp;&nbsp;(TAGLINE : #SAM)</p>
+                    <a href="https://playvalorant.com/en-gb/" target="_blank" class="learn-more">Learn More</a>
+                </div>
+                <span class="circle-before"></span>
+            </div> -->
+        </div>
+    </section>
+
+
+    <section class="skills" id="skill">
+        <h2 class="heading">Tools And System</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row" id="skillsContainer">
+                <div class="bar">
+                    <div class="info">
+                        <img src="vs code.png">
+                        <span>VS CODE</span>
+                    </div>
+                    <div class="info">
+                        <img src="google colab.png">
+                        <span>GOOGLE COLAB</span>
+                    </div>
+                    <div class="info">
+                        <img src="git.png">
+                        <span>GIT</span>
+                    </div>
+                    <div class="info">
+                        <img src="github.png">
+                        <span>GITHUB</span>
+                    </div>
+                    <div class="info">
+                        <img src="my sql.png">
+                        <span>MY SQL</span>
+                    </div>
+                    <div class="info">
+                        <img src="canva.png">
+                        <span>CANVA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="services" id="services">
+        <h2 class="heading">My Work</h2>
+        <div class="service-container">
+            <div class="single-service">
+                <div class="content">
+                    <span class="icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </span>
+                    <h3 class="title">Ai Assistant For Farmers</h3>
+                    <p class="description">designed to support farmers with crop disease detection using machine learning.</p>
+                    <a href="https://github.com/saloni222444/AI-Assistant-for-Farmers-" target="_blank" class="learn-more">Learn More</a>
+                </div>
+                <span class="circle-before"></span>
+            </div>
+
+            <div class="single-service">
+                <div class="content">
+                    <span class="icon">
+                        <i class="fa-solid fa-music"></i>
+                    </span>
+                    <h3 class="title">Spotify Clone</h3>
+                    <p class="description">A web-based music streaming clone replicating core Spotify features like playlists, song controls, and responsive UI using HTML, CSS, and JavaScript.</p>
+                    <a href="https://github.com/saloni222444/Spotify-clone" class="learn-more">Learn More</a>
+                </div>
+                <span class="circle-before"></span>
+            </div>
+
+            <div class="single-service">
+                <div class="content">
+                    <span class="icon">
+                        <i class="fa-brands fa-google-play"></i>
+                    </span>
+                    <h3 class="title">PortFolio</h3>
+                    <p class="description"></p>
+                    <a href="https://roadmap.sh/" class="learn-more">Learn More</a>
+                </div>
+                <span class="circle-before"></span>
+            </div>
+            <div class="single-service">
+                <div class="content">
+                    <span class="icon">
+                        <i class="fa-solid fa-language"></i>
+                    </span>
+                    <h3 class="title">Pos Tagger in Dogri Language </h3>
+                    <p class="description">Developed a machine learning-based POS tagger for the Dogri language, enabling grammatical tagging of text to support low-resource NLP applications </p>
+                    <a href="https://playvalorant.com/en-gb/" target="_blank" class="learn-more">Learn More</a>
+                </div>
+                <span class="circle-before"></span>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="education" id="Education">
+        <h2 class="heading">Education</h2>
+        <div class="timeline">
+            <div class="container right">
+                <div class="contnent">
+                    <div class="tag">
+                        <h2>Central university of Jammu</h2>
+                    </div>
+                <div class="desc">
+                    <p>Pursuing B.Tech in Computer Science </p>
+                </div>
+            </div>
+            </div>
+            <div class="container left">
+            <div class="contnent">
+                <div class="tag">
+                    <h2>High School</h2>
+                </div>
+                <div class="desc">
+                    <p>Done from Sarawati Vidya Mandir Inter College with 83% Score</p>
+                </div>
+            </div>
+
+            </div> 
+            <div class="container right">
+            <div class="contnent">
+                <div class="tag">
+                    <h2>Seconday School</h2>
+                </div>
+                <div class="desc">
+                    <p>Done from Sarawati Vidya Mandir Inter College in P.C.M. with more than 75% Score</p>
+                </div>
+            </div>
+            
+            </div>
+            <div class="container left">
+            <div class="contnent">
+                <div class="tag">
+                    <h2>To be Filled</h2>
+                </div>
+                <div class="desc">
+                    <p>...</p>
+                </div>
+            </div>
+            
+            </div>
+            <div class="container right">
+            <div class="contnent">
+                <div class="tag">
+                    <h2>To be Filled</h2>
+                </div>
+                <div class="desc">
+                    <p>...</p>
+                </div>
+            </div>
+            
+            </div>
+            <div class="container left">
+                <div class="contnent">
+                    <div class="tag">
+                        <h2>To be Flled</h2>
+                    </div>
+                    <div class="desc">
+                        <p>...</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+<!--
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>samarthprashar1525@gmail.com</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/samarth-prashar-739053286/" target="_blank" class="fa-brands fa-linkedin"></a>
+                        <a href="https://github.com/MYSTICxSAM" target="_blank" class="fa-brands fa-github"></a>
+                        <a href="https://www.instagram.com/sam_pra31/" target="_blank" class="fa-brands fa-instagram"></a>
+                        <a href="https://www.youtube.com/channel/UCL36SiP7YEZ36TF9FRQN__Q" target="_blank" class="fa-brands fa-youtube"></a>
+                    </div>
+                    <button class="btn-cv">
+                        <p>Download Resume</p>
+                    </button>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button class="button">
+                            <p>Submit</p>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    --->
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/salonimoga/" target="_blank" class="fa-brands fa-linkedin"></a>
+            <a href="https://github.com/saloni222444" target="_blank" class="fa-brands fa-github"></a>
+            <a href="https://www.instagram.com/saloniiiii___24/" target="_blank" class="fa-brands fa-instagram"></a>
+        </div>
+        <ul class="list">
+            <li><a href="FAQ's.html">FAQ's</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="mailto:salonimoga@gmail.com">Contact</a></li>
+            <!--<li><a href="#">Privacy Policy</a></li> -->
+        </ul>
+        <p class="copyright">
+            <i class="fa-regular fa-copyright"></i> Saloni | All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
